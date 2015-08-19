@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TauCharts technical preview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+<!--
+    Debug class on <body> enables
+    cyan grid on slides
+    -->
+<header class="caption">
+    <h1>TauCharts technical preview</h1>
+
+    <p><a href="https://twitter.com/krivlenia">Константин Кривленя</a></p>
+
+    <p>Компания <a href="http://www.targetprocess.com">Taucraft</a></p>
+</header>
+<section class="slide shout">
+    <div>
+        <h2>Цифры</h2>
+    </div>
+</section>
+<section class="slide shout">
+    <div>
+        <h2>4356 строк кода без учета плагинов</h2>
+    </div>
+</section>
+<section class="slide shout">
+    <div>
+        <h2><a href="https://travis-ci.org/TargetProcess/tauCharts">227 тестов 33.571 секунды</a></h2>
+    </div>
+</section>
+<section class="slide shout">
+    <div>
+        <h2>97% <a href="https://coveralls.io/github/TargetProcess/tauCharts">code coverage</a></h2>
+    </div>
+</section>
+<section class="slide shout">
+    <div>
+        <h2>3.12 <a href="https://codeclimate.com/github/TargetProcess/tauCharts">code climate</a></h2>
+    </div>
+</section>
+<section class="slide shout">
+    <div>
+        <h2>81 <a href="https://github.com/TargetProcess/tauCharts/releases">releases</a> меньше чем за
+            год</h2>
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Код</h2>
+        <ul class="link-list">
+            <li class="next">библиотеки
+                <ul>
+                    <li class="next"><a href="http://d3js.org/">d3</a> для отрисовки</li>
+                    <li class="next"><a href="http://underscorejs.org/">_</a> для колекций</li>
+                </ul>
+            </li>
+            <li class="next">
+                Процессинг
+                <ul>
+                    <li class="next"><a href="http://babeljs.io/">ES6</a>(es6-transpiler -> 6to5 -> babel)</li>
+                    <li class="next"><a href="http://lesscss.org/">less</a></li>
+                    <li class="next"><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Тесты</h2>
+        <ul class="link-list">
+            <li class="next"><a href="https://mochajs.org/">Mocha</a> and <a href="http://chaijs.com/">Chai</a></li>
+            <li class="next"><a href="http://karma-runner.github.io/">Karma</a></li>
+            <li class="next"><a href="https://travis-ci.org/">TravisCI</a></li>
+        </ul>
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Сборка</h2>
+        <ul class="link-list">
+            <li class="next"><a href="http://gruntjs.com/">Grunt</a></li>
+            <li class="next"><a href="http://webpack.github.io/">webpack</a> для development(368 KB uncompressed)</li>
+            <li class="next"><a href="http://requirejs.org/">requireJs</a> для release(394 KB uncompressed)(legacy)</li>
+        </ul>
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <img height="100%" src="pictures/build-folder.png" align="right" alt="BUILD_FOLDER"/>
+        <h2>Выпуск билдов</h2>
+        <p>
+            Grunt собирает в папку build и пушит в release ветку. Помогает избегать конфликтов и оставляет основную
+            ветку чистой.
+        </p>
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Development flow</h2>
+        <ul class="link-list">
+            <li class="next">Трекер задач - <a href="http://www.targetprocess.com/">targetprocess</a></li>
+            <li class="next">Баги - <a href="https://github.com/TargetProcess/tauCharts/issues">github issue</a></li>
+            <li class="next"><a href="http://nvie.com/posts/a-successful-git-branching-model/">gitflow</a> как способ доставки в master</li>
+            <li class="next"><a href="https://codeclimate.com">codeclimate</a> качество кода</li>
+            <li class="next"><a href="https://coveralls.io">coveralls</a> покрытие кода</li>
+        </ul>
+    </div>
+</section>
+<section class="slide shout">
+    <h2>Вопросы?</h2>
+</section>
+<section class="slide">
+    <div>
+        <h2>Контакты</h2>
+        <a style="background:url(pictures/twitter-bird-light-bgs.png) no-repeat;padding-left:40px;"
+           href="https://twitter.com/Krivlenia">Twitter (https://twitter.com/Krivlenia/)</a><br>
+        <a style="background:url(pictures/GitHub-Mark-32px.png) no-repeat;padding-left:40px;"
+           href="https://github.com/Mavrin">Github (https://github.com/Mavrin/)</a><br>
+        <a style="background:url(pictures/habrahabr.png) center left no-repeat;padding-left:20px;"
+           href="http://habrahabr.ru/users/mavrin/">Хабр (http://habrahabr.ru/users/mavrin/)</a><br>
+    </div>
+</section>
+<!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+<div class="progress">
+    <div></div>
+</div>
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 2013 Yours Truly, Famous Inc. -->
+</body>
+</html>
